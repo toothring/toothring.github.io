@@ -11,27 +11,41 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet">
 	<title>My Profile - RMIT</title>
 	<style type="text/css">
-		html, body {height:100%;}
+		html, body	{height:100%;}
 		html		{display:table;
 					 margin:auto;}
 		body		{display:table-cell;
 					 vertical-align:middle;
 					 margin:0;
 					 padding:0;
-					 font-family:Tahoma, Geneva, sans-serif}
-		header, nav, section {max-width:960px}
+					 background-color:#ccc;
+					 font-family:Tahoma, Geneva, sans-serif;
+					 font-size:0.93em}
+		header, nav, main	{max-width:960px;
+							 background-color:#fff}
+		h2, h3, p	{padding-left:10px;
+					 padding-right:10px;}
 		h1			{text-align:center;
 					 font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;}
-		#navBar		{width:100%;
+		h3			{font-size:0.8em;}
+		header h3	{text-align:right;}
+		section h3	{text-align:center;
+					 opacity:0.7;}
+		nav			{width:100%;
 					 padding-top:5px;
 					 padding-bottom:5px;
 					 background-color:#777;
 					 font-family:'Roboto', sans-serif;
 					 color:#ddd;}
-		#navBar div	{display:inline-block;
+		nav div		{display:inline-block;
 					 width:18%;
 					 text-align:center;
 					 text-transform:capitalize;}
+		footer		{text-align:center;
+					 background-color:#777;}
+		footer a	{color:white;
+					 text-decoration:none}
+		#ideal-job h2	{margin-bottom:0px;}
 		#job-post	{float:right;}
 	</style>
 </head>
@@ -40,27 +54,33 @@
 		<h1>RMIT Profile Assignment</h1>
 		<h3>Michael Plen*** - s3807909</h3>
 	</header>
-	<nav id="navBar">
+	<nav>
 		<div>info</div>
 		<div>interest in IT</div>
 		<div>ideal job</div>
 		<div>profile</div>
 		<div>project</div>
 	</nav>
-	<section id="info">
-		<h2>Personal Information</h2>
-		<p>I am a Canadian citizen who is currently immigrating to Australia to live with my wife close to her parents. My father is Mennonite; his family can be traced all over Europe and my mother is ethnically Chinese, but she moved from Hong Kong to Canada when she was a child.</p>
-		<p>Born and raised in Vancouver, my wife and I relocated to the Central Coast almost three years ago. I speak English and French (a little rusty) and this degree will be my first post-secondary education if you don’t include certificates. I do hold a current Cisco CCENT certificate and I plan of taking my ICND2 this coming March</p>
-		<p> A little-known fact about me is that in my twenties I purchased and modified a deep crawler and ran a news search engine website that collected and categorized articles from just under two thousand newspapers from around the world. I love to draw, take photographs and tinker with my Raspberry Pi’s and HP DL380 G7 server running vCenter.</p>
-	</section>
-	<section id="ideal-job">
-		<h2>Ideal Job</h2>
-		<h3><a href="https://www.seek.com.au/job/39244686?searchrequesttoken=e34579d4-8f4f-40d6-8ef2-91f07edd18e8&type=standout">https://www.seek.com.au/job/39244686?searchrequesttoken=e34579d4-8f4f-40d6-8ef2-91f07edd18e8&type=standout</a></h3>
-		<a href="job-post.png" id="job-post" target="_top"><img src="job-post-thumbnail.gif"></a>
-		<p>Design, Build, Manage and Maintain applications on premise and in the cloud using DevOps to collect, monitor and analyze data in order to help the client get ahead of issues and provide quick response turnaround and fixes. It’s extremely rewarding to work on a project that you can go on to support and maintain into the future while at the same time can rollover what you’ve learnt and apply it to the next project.</p>
-		<p>To get a position like this you’d need years of management, AWS certifications, some previous work with CICD methodology; maybe some work with Jenkins Pipeline. A solid understanding with infrastructure on Layer 2 and Layer 3 would probably be required.  My understanding is that most DevOps positions are filled with people who come from a background in coding. Good work ethic and a willingness to put in the hours.</p>
-		<p>My fifteen years as a computer tech working on desktops and servers would come in handy as would my Cisco certificate on routing and switching. Beyond that I have also done some work with JavaScript, HTML, CSS, PHP, MySQL and run ISPConfig on a Debian Linux ESXi 6 virtual machine.</p>
-		<p>There is a lot of experience and study that stands between where I am today and this dream job. Though I’ve been a team lead on many projects, the scope has been smaller, and the timelines have been much shorter so I would need to take a course or get some practical experience in management. Security is always at the top of my mind and with any new technology comes a new world of security. This job is close to a full stack developer and I would need to be aware of best practices and have practical experience on every level. While I have investigated AWS, I would need to get a certificate or two in order to feel comfortable. And finally, I would need to build a program or app from the ground up probably in Python.</p>
-	</section>
+	<main>
+		<section id="info">
+			<h2>Personal Information</h2>
+			<p>I am a Canadian citizen who is currently immigrating to Australia to live with my wife close to her parents. My father is Mennonite; his family can be traced all over Europe and my mother is ethnically Chinese, but she moved from Hong Kong to Canada when she was a child.</p>
+			<p>Born and raised in Vancouver, my wife and I relocated to the Central Coast almost three years ago. I speak English and French (a little rusty) and this degree will be my first post-secondary education if you don’t include certificates. I do hold a current Cisco CCENT certificate and I plan of taking my ICND2 this coming March</p>
+			<p> A little-known fact about me is that in my twenties I purchased and modified a deep crawler and ran a news search engine website that collected and categorized articles from just under two thousand newspapers from around the world. I love to draw, take photographs and tinker with my Raspberry Pi’s and HP DL380 G7 server running vCenter.</p>
+		</section>
+		<section id="ideal-job">
+			<h2>Ideal Job: DevOps Lead - AWS</h2>
+			<h3><a href="https://www.seek.com.au/job/39244686?searchrequesttoken=e34579d4-8f4f-40d6-8ef2-91f07edd18e8&type=standout">https://www.seek.com.au/job/39244686?searchrequesttoken=e34579d4-8f4f-40d6-8ef2-91f07edd18e8&type=standout</a></h3>
+			<a href="job-post.png" id="job-post" target="_top"><img src="job-post-thumbnail.gif"></a>
+			<p>Design, Build, Manage and Maintain applications on premise and in the cloud using DevOps to collect, monitor and analyze data in order to help the client get ahead of issues and provide quick response turnaround and fixes. It’s extremely rewarding to work on a project that you can go on to support and maintain into the future while at the same time can rollover what you’ve learnt and apply it to the next project.</p>
+			<p>To get a position like this you’d need years of management, AWS certifications, some previous work with CICD methodology; maybe some work with Jenkins Pipeline. A solid understanding with infrastructure on Layer 2 and Layer 3 would probably be required.  My understanding is that most DevOps positions are filled with people who come from a background in coding. Good work ethic and a willingness to put in the hours.</p>
+			<p>My fifteen years as a computer tech working on desktops and servers would come in handy as would my Cisco certificate on routing and switching. Beyond that I have also done some work with JavaScript, HTML, CSS, PHP, MySQL and run ISPConfig on a Debian Linux ESXi 6 virtual machine.</p>
+			<p>There is a lot of experience and study that stands between where I am today and this dream job. Though I’ve been a team lead on many projects, the scope has been smaller, and the timelines have been much shorter so I would need to take a course or get some practical experience in management. Security is always at the top of my mind and with any new technology comes a new world of security. This job is close to a full stack developer and I would need to be aware of best practices and have practical experience on every level. While I have investigated AWS, I would need to get a certificate or two in order to feel comfortable. And finally, I would need to build a program or app from the ground up probably in Python.</p>
+		</section>
+		<br>
+	</main>
+	<footer>
+		<br><a href="mailto:s3807909@student.rmit.edu.au">contact me</a><br><br>
+	</footer>
 </body>
 </html>
